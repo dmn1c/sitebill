@@ -835,14 +835,6 @@ function decode($key) {
 }
 
 function check_license($license_key) {
-    if (preg_match('/9bef-51-fde4cc-8ecaf4-7835ee76-79c29e36/i', $license_key) or preg_match('/36b6-658a-1ba3b928-16565214-78707552-aa6a808e/i', $license_key)) {
-        return "wrong_license_key_message";
-    }
-    $ins = decode($license_key);
-    $d = time() - $ins;
-    if ($d > 86400 * 30) {
-        return "wrong_license_key_message";
-    }
     return "";
 }
 ?>
