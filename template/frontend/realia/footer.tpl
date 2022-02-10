@@ -68,7 +68,7 @@
                                                 </tr>
                                                 <tr>
                                                     <th class="email">E-mail:</th>
-                                                    <td>{if $apps_contact_email != ''}{$apps_contact_email}{else}dkondin@gmail.com{/if}</td>
+                                                    <td>{if $apps_contact_email != ''}{$apps_contact_email}{else}report@etown.ru{/if}</td>
                                                 </tr>
                                                 {if $apps_contact_skype != ''}
                                                 <tr>

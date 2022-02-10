@@ -28,7 +28,7 @@
 
                             <div class="info">
                                 <div class="site-email">
-                                    <a><editable id="info_email_edit" data-file="header_contact_add.tpl">{if $apps_contact_email != ''}{$apps_contact_email}{else}dkondin@gmail.com{/if}</editable></a>
+                                    <a><editable id="info_email_edit" data-file="header_contact_add.tpl">{if $apps_contact_email != ''}{$apps_contact_email}{else}report@etown.ru{/if}</editable></a>
                                 </div><!-- /.site-email -->
 
 
