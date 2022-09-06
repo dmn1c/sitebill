@@ -153,7 +153,7 @@ class wizard {
 
         $distrib_folder = $_POST['distrib_folder'];
         if ($distrib_folder == '') {
-            $distrib_folder = $_SESSION['distrib_folder'];
+            $distrib_folder = @$_SESSION['distrib_folder'];
         }
 
         $_SESSION['distrib_folder'] = $distrib_folder;
