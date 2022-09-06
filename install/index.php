@@ -193,7 +193,7 @@ class wizard {
     }
 
     function check_step3() {
-        if ($_POST['ready'] == 1) {
+        if (@$_POST['ready'] == 1) {
             return true;
         }
         $connection_status = FALSE;
@@ -253,7 +253,7 @@ class wizard {
             }
 
             $progressbar_value = 60;
-            $steps[$step]['result'] = 1;
+            @$steps[$step]['result'] = 1;
             return true;
         }
 
