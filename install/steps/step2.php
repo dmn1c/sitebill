@@ -33,7 +33,7 @@
         <div class="col-xs-12 col-sm-6">
             <span class="block input-icon input-icon-right">
                 <input type="text" class="col-xs-12" id="inputError" name="license_key" placeholder="Лицензионный ключ"
-                       value="<?php if ($_POST['license_key'] != '') {
+                       value="<?php if (isset($_POST['license_key']) and $_POST['license_key'] != '') {
                            echo $_POST['license_key'];
                        } else {
                            echo 'nulled-sitebill';
