@@ -46,8 +46,9 @@ if ($wizard->check_step( --$step)) {
     $step++;
 }
 //echo 'step = '.$step.'<br>';
-
-ini_set("include_path", $include_path);
+if ( isset($include_path) ) {
+    ini_set("include_path", $include_path);
+}
 
 if (isset($_SESSION['steps'])) {
     $steps = $_SESSION['steps'];
